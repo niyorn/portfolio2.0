@@ -24,6 +24,12 @@ Index page
 
 /*navigation*/
 
+.index nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 .index nav ul {
     display: flex;
     list-style: none;
