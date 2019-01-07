@@ -86,14 +86,13 @@ Index page
 
 .index .decoration {
     width: 70vw;
-    height: 80vh;
+    height: 70vh;
     background-color: rgb(40, 40, 110);
     position: absolute;
     z-index: -1;
     justify-self: center;
     align-self: center;
-    animation: decoration-slide-in 0.7s ease-in-out;
-    transform-origin: top;
+    animation: decoration-slide-in 0.4s ease-out;
 }
 
 
@@ -103,10 +102,10 @@ Animation
 
 @keyframes decoration-slide-in {
     0% {
-       transform:rotateX(40deg);
+       transform: scale(0);
     }
 
     100% {
-        transform: rotateX(0);
+        transform: scale(1);
     }
 }
