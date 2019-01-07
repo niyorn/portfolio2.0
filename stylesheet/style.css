@@ -7,3 +7,31 @@
 html, body {
     height: 100%;
 }
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a   {
+    color: white;
+}
+
+/***********************************
+Index page
+***********************************/
+
+.index nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.index nav ul li {
+    display: flex;
+}
+
+.index nav ul li a {
+    padding: 1rem;
+    text-decoration: none;
+}
