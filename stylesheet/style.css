@@ -21,6 +21,9 @@ a   {
 Index page
 ***********************************/
 
+
+/*navigation*/
+
 .index nav ul {
     display: flex;
     list-style: none;
@@ -34,4 +37,66 @@ Index page
 .index nav ul li a {
     padding: 1rem;
     text-decoration: none;
+}
+
+
+/*header*/
+.index header {
+    padding: 1rem;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    perspective: 400px;
+}
+
+.index header h1 {
+    font-size: 27vw
+}
+
+.index header p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.index header .explore-link {
+    font-size: 2rem;
+    padding: 1.2rem;
+    border: solid 0.2rem yellow; 
+    display: inline-flex;
+    text-decoration: none;
+    color: yellow;
+    margin-top: 2rem;
+}
+
+.index header .explore-link:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.index .decoration {
+    width: 70vw;
+    height: 80vh;
+    background-color: rgb(40, 40, 110);
+    position: absolute;
+    z-index: -1;
+    justify-self: center;
+    align-self: center;
+    animation: decoration-slide-in 0.4s ease-in-out;
+    transform-origin: top;
+}
+
+
+/*************************
+Animation
+**************************/
+
+@keyframes decoration-slide-in {
+    0% {
+       transform:rotateX(100deg);
+    }
+
+    100% {
+        transform: rotateX(0);
+    }
 }
