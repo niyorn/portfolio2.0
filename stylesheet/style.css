@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url('../assets/font/Ubuntu/Ubuntu-Regular.ttf') format ('tff');
+    font-display: swap;
+}
+
+:root {
+    --color-one: #0d111c;
+    --color-two: #0064b7;
+    --color-three: #ffe164;
+
+    --color-text-light: #f9f9f7;
+    --color-text-dark: #0d111c;
+}
+
 *   {
     margin: 0;
     padding: 0;
@@ -7,16 +22,19 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
-
 }
 
 body {
-    background-color: black;
+    background-color: #0d111c;
+    background-color: var(--color-one);
     color: white;
+    color: var(--color-text-light);
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
 a   {
     color: white;
+    color: var(--color-text-light);
 }
 
 /***********************************
@@ -31,7 +49,8 @@ Index page
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: black;
+    background-color: #0d111c;
+    background-color: var(--color-one);
 }
 .index nav ul {
     display: flex;
@@ -51,7 +70,7 @@ Index page
 
 /*header*/
 .index header {
-    padding: 1rem;
+    padding: 1rem 1.4rem;
     height: 100%;
     position: relative;
     display: flex;
@@ -72,27 +91,28 @@ Index page
 .index header .explore-link {
     font-size: 2rem;
     padding: 1rem;
-    border: solid 0.2rem yellow; 
+    border: solid 0.2rem var(--color-three); 
     display: inline-flex;
     text-decoration: none;
-    color: yellow;
+    color: var(--color-three);
     margin-top: 1rem;
+    transition: background-color 0.2s ease-out;
 }
 
 .index header .explore-link:hover {
-    background-color: yellow;
-    color: black;
+    background-color: var(--color-three);
+    color: var(--color-one);
 }
 
 .index .decoration {
     width: 70vw;
     height: 70vh;
-    background-color: rgb(40, 40, 110);
+    background-color: var(--color-two);
     position: absolute;
     z-index: -1;
     justify-self: center;
     align-self: center;
-    animation: decoration-slide-in 0.4s ease-out;
+    animation: decoration-slide-in 0.7s ease-out;
 }
 
 
@@ -102,10 +122,10 @@ Animation
 
 @keyframes decoration-slide-in {
     0% {
-       transform: scale(0);
+       transform: scale(0) rotateX(-100deg);
     }
 
     100% {
-        transform: scale(1);
+        transform: scale(1) rotateX(0);
     }
 }
