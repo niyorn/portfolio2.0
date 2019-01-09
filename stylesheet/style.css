@@ -96,10 +96,15 @@ Index page
     display: flex;
 }
 
+.index nav ul .logo a:hover {
+    background-color: transparent;
+}
+
 .index nav ul .logo a:hover svg circle,
 .index nav ul .logo a:focus svg circle{
     transform: translateX(0);
 }
+
 
 .index nav ul .logo svg {
     height: 2rem;
@@ -124,6 +129,11 @@ Index page
 .index header p {
     margin-top: 1rem;
     font-size: 2rem;
+}
+
+.index header .name {
+    color: yellow;
+    color: var(--color-three);
 }
 
 .index header .explore-link {
