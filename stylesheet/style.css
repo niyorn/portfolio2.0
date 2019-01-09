@@ -32,9 +32,17 @@ body {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
 }
 
+:focus {
+    background-color: #ffe164;
+    background-color: var(--color-three);
+    color: #0d111c;
+    color: var(--color-text-dark);
+}
+
 a   {
     color: white;
     color: var(--color-text-light);
+    transition: all 0.4s;
 }
 
 /***********************************
@@ -82,7 +90,8 @@ Index page
     display: flex;
 }
 
-.index nav ul .logo a:hover svg circle{
+.index nav ul .logo a:hover svg circle,
+.index nav ul .logo a:focus svg circle{
     transform: translateX(0);
 }
 
@@ -117,12 +126,14 @@ Index page
     border: solid 0.2rem var(--color-three); 
     display: inline-flex;
     text-decoration: none;
+    color: yellow;
     color: var(--color-three);
-    margin-top: 1rem;
+    margin-top: 2rem;
     transition: background-color 0.2s ease-out;
 }
 
-.index header .explore-link:hover {
+.index header .explore-link:hover, 
+.index header .explore-link:focus {
     background-color: var(--color-three);
     color: var(--color-one);
 }
