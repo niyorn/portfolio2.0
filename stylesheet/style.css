@@ -51,11 +51,13 @@ Index page
     z-index: 100;
     background-color: #0d111c;
     background-color: var(--color-one);
+    padding: 0 1.4rem;
 }
 .index nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .index nav ul li {
@@ -65,6 +67,27 @@ Index page
 .index nav ul li a {
     padding: 1rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo svg circle {
+    transform: translate(-50px);
+    transition: transform 0.2s ease-out;
+}
+
+
+.index nav ul .logo a { 
+    display: flex;
+}
+
+.index nav ul .logo a:hover svg circle{
+    transform: translateX(0);
+}
+
+.index nav ul .logo svg {
+    height: 2rem;
 }
 
 
