@@ -44,6 +44,12 @@ a   {
     color: var(--color-text-light);
     transition: all 0.4s;
 }
+a:hover {
+    background-color: #ffe164;
+    background-color: var(--color-three);
+    color: #0d111c;
+    color: var(--color-text-dark);
+}
 
 /***********************************
 Index page
