@@ -5,7 +5,7 @@
 }
 
 :root {
-    --color-one: #0d111c;
+    --color-one: #0f1627;
     --color-two: #0064b7;
     --color-three: #ffe164;
 
@@ -67,6 +67,7 @@ Index page
     background-color: var(--color-one);
     padding: 0 1.4rem;
 }
+
 .index nav ul {
     display: flex;
     list-style: none;
@@ -121,14 +122,49 @@ Index page
     perspective: 400px;
     overflow: hidden;
 }
+@media screen and (min-width: 42em){
+    .index header {
+        display: grid;
+        grid-template-areas: "hello empty"
+                             "empty-two welcome-text";
+        grid-template-columns: 50vw;
+        grid-template-rows: auto 1fr;
+
+        padding: 2rem;
+    }
+
+    .index header .welcome-text-container {
+        grid-area: welcome-text;
+    }
+}
+
+.index header h1,
+.index header p,
+.index header a {
+    opacity: 0;
+    animation: fade-in 0.7s forwards;
+    animation-delay: 0.6s;
+}
 
 .index header h1 {
-    font-size: 27vw
+    font-size: 27vw;
+}
+@media screen and (min-width: 42em){
+    .index header h1 {
+        font-size: 18vw;
+        grid-area: hello;
+    }
 }
 
 .index header p {
     margin-top: 1rem;
     font-size: 2rem;
+}
+
+@media screen and (min-width: 60em) {
+    .index header p {
+        font-size: 3vw;
+    }
 }
 
 .index header .name {
@@ -155,14 +191,20 @@ Index page
 }
 
 .index .decoration {
+    z-index: -1;
     width: 70vw;
     height: 70vh;
     background-color: var(--color-two);
     position: absolute;
-    z-index: -1;
     justify-self: center;
     align-self: center;
     animation: decoration-slide-in 0.7s ease-out;
+}
+@media screen and (min-width: 42em){
+    .index .decoration {
+        width: 60vh;
+        height: 75vh;
+    }
 }
 
 
@@ -177,5 +219,15 @@ Animation
 
     100% {
         transform: scale(1) rotateX(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
