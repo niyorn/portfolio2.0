@@ -7,6 +7,192 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+    <style>
+        @font-face {
+            font-family: "Ubuntu";
+            src: url('../assets/font/Ubuntu/Ubuntu-Regular.ttf') format ('tff');
+            font-display: swap;
+        }
+
+        :root {
+            --color-one: #0d111c;
+            --color-two: #0064b7;
+            --color-three: #ffe164;
+
+            --color-text-light: #f9f9f7;
+            --color-text-dark: #0d111c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0d111c;
+            background-color: var(--color-one);
+            color: white;
+            color: var(--color-text-light);
+            font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+        }
+
+        :focus {
+            background-color: #ffe164;
+            background-color: var(--color-three);
+            color: #0d111c;
+            color: var(--color-text-dark);
+        }
+
+        a {
+            color: white;
+            color: var(--color-text-light);
+            transition: all 0.4s;
+        }
+
+        a:hover {
+            background-color: #ffe164;
+            background-color: var(--color-three);
+            color: #0d111c;
+            color: var(--color-text-dark);
+        }
+
+        /***********************************
+Index page
+***********************************/
+
+
+        /*navigation*/
+
+        .index nav {
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background-color: #0d111c;
+            background-color: var(--color-one);
+            padding: 0 1.4rem;
+        }
+
+        .index nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .index nav ul li {
+            display: flex;
+        }
+
+        .index nav ul li a {
+            padding: 1rem;
+            text-decoration: none;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo svg circle {
+            transform: translate(-50px);
+            transition: transform 0.2s ease-out;
+        }
+
+
+        .index nav ul .logo a {
+            display: flex;
+        }
+
+        .index nav ul .logo a:hover {
+            background-color: transparent;
+        }
+
+        .index nav ul .logo a:hover svg circle,
+        .index nav ul .logo a:focus svg circle {
+            transform: translateX(0);
+        }
+
+
+        .index nav ul .logo svg {
+            height: 2rem;
+        }
+
+
+        /*header*/
+        .index header {
+            padding: 1rem 1.4rem;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            perspective: 400px;
+            overflow: hidden;
+        }
+
+        .index header h1 {
+            font-size: 27vw
+        }
+
+        .index header p {
+            margin-top: 1rem;
+            font-size: 2rem;
+        }
+
+        .index header .name {
+            color: yellow;
+            color: var(--color-three);
+        }
+
+        .index header .explore-link {
+            font-size: 2rem;
+            padding: 1rem;
+            border: solid 0.2rem var(--color-three);
+            display: inline-flex;
+            text-decoration: none;
+            color: yellow;
+            color: var(--color-three);
+            margin-top: 2rem;
+            transition: background-color 0.2s ease-out;
+        }
+
+        .index header .explore-link:hover,
+        .index header .explore-link:focus {
+            background-color: var(--color-three);
+            color: var(--color-one);
+        }
+
+        .index .decoration {
+            width: 70vw;
+            height: 70vh;
+            background-color: var(--color-two);
+            position: absolute;
+            z-index: -1;
+            justify-self: center;
+            align-self: center;
+            animation: decoration-slide-in 0.7s ease-out;
+        }
+
+
+        /*************************
+        Animation
+        **************************/
+
+        @keyframes decoration-slide-in {
+            0% {
+                transform: scale(0) rotateX(-100deg);
+            }
+
+            100% {
+                transform: scale(1) rotateX(0);
+            }
+        }
+    </style>
 </head>
 
 <body class="index">
