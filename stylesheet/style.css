@@ -207,6 +207,82 @@ Index page
     }
 }
 
+/*Projects*/
+
+.projects-container {
+    padding: 1.4rem;
+}
+
+.projects-container + h1 {
+    font-size: 2rem;
+    width: 5rem;
+}
+
+.project-container {
+    min-height: 22rem;;
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.project-container .project-styling-container {
+    position: relative;
+    width: 100%;
+}
+
+.project-styling-container .descriptor {
+    position: absolute;
+    top: -2rem;
+    filter: drop-shadow(5px 4px 8px black);
+}
+
+.project-container .descriptor h1 {
+    font-size: 3rem;
+}
+
+.project-container .assets-container {
+    background-color: rgba(0, 0, 0, 0.294);
+    height: 22rem;
+}
+
+.project-container .assets-container * {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-container .my-role-container {
+    display: none;
+}
+
+.project-container .project-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.project-container .project-links li {
+    display: flex;
+}
+
+.project-container .project-links a {
+    margin: 0 0.4rem;
+    padding: 1rem;
+    border: solid .2rem var(--color-three);
+    color: var(--color-three);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-container .project-links a:hover,
+.project-container .project-links a:focus {
+    color: var(--color-text-dark);
+    background-color: var(--color-three);
+}
+
+
 
 /*************************
 Animation
