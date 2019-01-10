@@ -232,23 +232,30 @@ Index page
 
 .project-styling-container .descriptor {
     position: absolute;
-    top: -2rem;
-    filter: drop-shadow(5px 4px 8px black);
+    top: -2.5rem;
+    filter: drop-shadow(2px 2px 4px black);
 }
 
-.project-container .descriptor h1 {
-    font-size: 3rem;
+.project-container .descriptor .project-title {
+    font-size: 3.4rem;
+}
+
+.project-container .descriptor .project-description {
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
 .project-container .assets-container {
-    background-color: rgba(0, 0, 0, 0.294);
     height: 22rem;
+    display: flex;
+    justify-content: center;
 }
 
 .project-container .assets-container * {
-    width: 100%;
+    width: 95%;
     height: 100%;
     object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.294);
 }
 
 .project-container .my-role-container {
@@ -272,7 +279,7 @@ Index page
     border: solid .2rem var(--color-three);
     color: var(--color-three);
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
