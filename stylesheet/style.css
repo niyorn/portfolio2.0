@@ -338,7 +338,7 @@ Index page
         display: flex;
         position: absolute;
         flex-direction: column;
-        right: -2rem;
+        right: -7rem;
         background-color: rgba(0, 0, 0, 0.78);
         color: var(--color-text-light);
         padding: 1.7rem;
@@ -350,6 +350,13 @@ Index page
         margin-bottom: 1rem;
     }
 }
+@media screen and (min-width:80em) {
+    .project-container .my-role-container {
+        flex-direction: column;
+        right: -3em;
+    }
+}
+
 
 .project-container .project-links {
     list-style: none;
