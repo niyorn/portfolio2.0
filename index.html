@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./stylesheet/style.css">
     <style>
         @font-face {
             font-family: "Ubuntu";
@@ -71,13 +70,14 @@ Index page
         /*navigation*/
 
         .index nav {
-            position: sticky;
+            position: fixed;
             top: 0;
             left: 0;
             z-index: 100;
             background-color: #0d111c;
             background-color: var(--color-one);
             padding: 0 1.4rem;
+            width: 100%;
         }
 
         .index nav ul {
@@ -127,6 +127,7 @@ Index page
         /*header*/
         .index header {
             padding: 1rem 1.4rem;
+            padding-top: 5rem;
             height: 100%;
             position: relative;
             display: flex;
@@ -247,6 +248,8 @@ Animation
             }
         }
     </style>
+    <link rel="stylesheet" href="./stylesheet/style.css">
+
 </head>
 
 <body class="index">
