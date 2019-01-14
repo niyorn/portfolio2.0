@@ -244,7 +244,10 @@ Index page
 }
 @media screen and (min-width: 60em) {
     .project-container .project-styling-container {
-        width: 84vw;
+        width: 67vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
@@ -262,6 +265,11 @@ Index page
 @media screen and (min-width: 42em) {
     .project-styling-container .descriptor {
         width: 50%;
+    }
+}
+@media screen and (min-width: 60em) {
+    .project-container .descriptor {
+        left: -4rem;
     }
 }
 @media screen and (min-width: 80em) {
@@ -325,6 +333,23 @@ Index page
 .project-container .my-role-container {
     display: none;
 }
+@media screen and (min-width:60em) {
+    .project-container .my-role-container {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        right: -2rem;
+        background-color: rgba(0, 0, 0, 0.78);
+        color: var(--color-text-light);
+        padding: 1.7rem;
+        font-size: 1.4rem;
+        border-top: solid 0.37rem var(--color-two);
+    }
+
+    .project-container .my-role-container .my-role-title {
+        margin-bottom: 1rem;
+    }
+}
 
 .project-container .project-links {
     list-style: none;
@@ -358,6 +383,8 @@ footer
 */
 
 .index footer {
+    display: flex;
+    justify-content: center;
     padding: 1.7rem;
 }
 
