@@ -289,6 +289,31 @@ Index page
     background-color: var(--color-three);
 }
 
+/*
+footer
+*/
+
+.index footer {
+    padding: 1.7rem;
+}
+
+.index footer p {
+    padding: 1.7rem;
+    border: solid 0.2rem rgba(5, 50, 160, 0.36);
+    border-radius: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.index footer p a {
+    color: var(--color-three);
+    text-decoration: none;
+}
+
+.index footer p a:hover,
+.index footer p a:focus{
+    background-color: var(--color-three);
+    color: var(--color-text-dark);
+}
 
 
 /*************************
