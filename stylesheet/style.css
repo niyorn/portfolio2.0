@@ -185,6 +185,11 @@ Index page
     margin-top: 2rem;
     transition: background-color 0.2s ease-out;
 }
+@media screen and (min-width: 42em) {
+    .index header .explore-link {
+        font-size: 2.5vw;
+    }
+}
 
 .index header .explore-link:hover, 
 .index header .explore-link:focus {
@@ -225,39 +230,96 @@ Index page
     margin-top: 7rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 60em){
+    .project-container {
+        height: 100vh;
+    }
 }
 
 .project-container .project-styling-container {
     position: relative;
     width: 100%;
 }
+@media screen and (min-width: 60em) {
+    .project-container .project-styling-container {
+        width: 84vw;
+    }
+}
 
 .project-styling-container .descriptor {
-    position: absolute;
-    top: -2.5rem;
     filter: drop-shadow(2px 2px 4px black);
+    width: 100%;
+}
+@media screen and (min-width: 32em) {
+    .project-styling-container .descriptor {
+        width: 70%;
+        position: absolute;
+        top: -2.5rem;
+    }
+}
+@media screen and (min-width: 42em) {
+    .project-styling-container .descriptor {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 80em) {
+    .project-styling-container .descriptor {
+        top: -7.4rem;
+    }
 }
 
 .project-container .descriptor .project-title {
     font-size: 3.4rem;
+}
+@media screen and (min-width: 42em) {
+    .project-styling-container .descriptor .project-title{
+        font-size: 10vw;
+    }
+}
+@media screen and (min-width: 80em) {
+    .project-styling-container .descriptor .project-title{
+        font-size: 7vw;
+    }
 }
 
 .project-container .descriptor .project-description {
     font-size: 1.4rem;
     margin-top: 1rem;
 }
+@media screen and (min-width: 80em) {
+    .project-container .descriptor .project-description {
+        font-size: 2vw;
+    }
+}
 
 .project-container .assets-container {
-    height: 22rem;
     display: flex;
     justify-content: center;
+}
+@media screen and (min-width: 42em) {
+    .project-container .assets-container {
+        height: 42vw;
+    }
+}
+@media screen and (min-width: 80em) {
+    .project-container .assets-container {
+        height: 30vw;
+    }
 }
 
 .project-container .assets-container * {
     width: 95%;
     height: 100%;
-    object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.294);
+    object-fit: contain;
+    background-color: transparent;
+    object-position: bottom;
+}
+@media screen and (min-width: 60em) {
+    .project-container .assets-container * {
+        width: 90%;
+    }
 }
 
 .project-container .my-role-container {
@@ -304,6 +366,7 @@ footer
     border: solid 0.2rem rgba(5, 50, 160, 0.36);
     border-radius: 0.2rem;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .index footer p a {
