@@ -76,12 +76,15 @@ Index page
 .index nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .index nav ul li {
     display: flex;
+}
+
+.index nav ul li.logo + li {
+    margin-left: auto;
 }
 
 .index nav ul li a {
