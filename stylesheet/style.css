@@ -368,7 +368,7 @@ Index page
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: -2rem;
+    margin-top: 1rem;
 }
 
 .project-container .project-links li {
@@ -381,7 +381,6 @@ Index page
     border: solid .2rem var(--color-three);
     color: var(--color-three);
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.4);
     text-align: center;
 }
 
