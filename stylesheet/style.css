@@ -407,6 +407,7 @@ footer
     border-radius: 0.2rem;
     font-size: 1.2rem;
     text-align: center;
+    background-color: var(--color-one);
 }
 
 .index footer p a {
