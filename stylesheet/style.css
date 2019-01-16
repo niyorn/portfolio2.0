@@ -34,6 +34,7 @@ body {
     var(--color-one);
     background-position: 0 0, 80px 80px;
     background-size:17px 17px;
+    background-attachment: fixed;
 }
 
 :focus {
@@ -432,11 +433,188 @@ footer
 /**************************
 About
 **************************/
+.about-page {
+    position: relative;
+}
+
+/* .about-page:after {
+    content: "";
+    z-index: -1;
+    width: 70vw;
+    height: 70vh;
+    background-color: var(--color-two);
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+    animation: decoration-slide-in 0.7s ease-out;
+    border-radius: 0.2rem;
+    top: 4rem;
+} */
 
 .about-page main{
-    margin-top: 4rem;
+    margin-top: 5rem;
     padding: 1.4rem;
 }
+
+.about-page .about-container {
+    display: grid;
+}
+@media screen and (min-width: 70em){
+    .about-page .about-container {
+        grid-template-areas: "name about"
+                            "about-extra contact";
+        grid-template-columns: 50%;
+        grid-gap: 7rem;
+    };
+    .about-page .about-container .name{
+        grid-area: name;
+    }
+    .about-page .about-container .about{
+        grid-area: about;
+    }
+    .about-page .about-container .about-extra{
+        grid-area: about-extra;
+    }
+    .about-page .about-container .contact{
+        grid-area: contact;
+    }
+    
+}
+
+.about-page .about-container .name h1{
+    font-size: 17vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 70em) {
+    .about-page .about-container .name h1{
+        font-size: 9vw;
+    } 
+}
+
+.about-page .about-container section {
+    margin-bottom: 3rem;
+}
+
+
+.about-page .about-container h2,
+.about-page .about-container h3 {
+    margin-bottom: 1rem;
+    display: inline-block;
+    padding-bottom: 0.4rem;
+}
+
+.about-page .about-container .about h2 {
+    border-bottom: solid 0.4rem var(--color-three);
+}
+.about-page .about-container .about-extra h3 {
+    border-bottom: solid 0.4rem var(--color-two);
+}
+.about-page .about-container .contact h3 {
+    border-bottom: solid 0.4rem var(--color-three);
+}
+
+.about-page .about-container .about-extra .value ul {
+    list-style-position: inside;
+}
+
+.about-page .about-container .about h2,
+.about-page .about-container .about p
+ {
+    font-size: 1.3em;
+}
+@media screen and (min-width:42em) {
+    .about-page .about-container .about h2,
+    .about-page .about-container .about p
+    {
+        font-size: 3vw;
+    }
+}
+@media screen and (min-width:70em) {
+    .about-page .about-container .about h2,
+    .about-page .about-container .about p
+    {
+        font-size: 2vw;
+    }
+}
+
+.about-page .about-container h3,
+.about-page .about-container p,
+.about-page .about-container ul {
+    font-size: 1.1rem;
+}
+@media screen and (min-width:60em) {
+    .about-page .about-container h3,
+    .about-page .about-container p,
+    .about-page .about-container ul {
+    font-size: 1.8vw;
+    }
+}
+@media screen and (min-width:90em) {
+    .about-page .about-container h3,
+    .about-page .about-container p,
+    .about-page .about-container ul {
+        font-size: 1.4vw;
+    }
+}
+@media screen and (min-width:120em) {
+    .about-page .about-container h3,
+    .about-page .about-container p,
+    .about-page .about-container ul {
+        font-size: 1.2vw;
+    }
+}
+
+.about-page .about-container .contact{
+    padding: 1.4rem;
+    background-color: var(--color-two);
+    border-radius: 0.2rem;
+}
+
+.about-page .about-container .contact ul{
+    margin-top: 1.4rem;
+    display: flex;
+    list-style: none;
+}
+
+.about-page .about-container .contact li{
+    margin-right: 1rem;
+}
+
+.about-page .about-container .contact li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-page .about-container .about-extra {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
+    grid-gap: 4rem;
+}
+
+.about-page .about-container .about-extra section {
+    margin: 0;
+}
+
+.about-page .about-container .contact address {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-page .about-container .contact a,
+.about-page .about-container .contact address a{
+    font-style: normal;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+
+
 
 
 
