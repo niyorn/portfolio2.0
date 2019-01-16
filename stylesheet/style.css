@@ -55,14 +55,14 @@ a:hover {
     color: var(--color-text-dark);
 }
 
-/***********************************
-Index page
-***********************************/
 
+/**********************************
+General
+**********************************/
 
 /*navigation*/
 
-.index nav {
+nav.navigation {
     position: fixed;
     top: 0;
     left: 0;
@@ -73,21 +73,21 @@ Index page
     width: 100%;
 }
 
-.index nav ul {
+nav.navigation ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
 }
 
-.index nav ul li {
+nav.navigation ul li {
     display: flex;
 }
 
-.index nav ul li.logo + li {
+nav.navigation ul li.logo + li {
     margin-left: auto;
 }
 
-.index nav ul li a {
+nav.navigation ul li a {
     padding: 1rem;
     text-decoration: none;
     font-size: 1.2rem;
@@ -101,24 +101,29 @@ Index page
 }
 
 
-.index nav ul .logo a { 
+nav.navigation ul .logo a { 
     display: flex;
 }
 
-.index nav ul .logo a:hover {
+nav.navigation ul .logo a:hover {
     background-color: transparent;
 }
 
-.index nav ul .logo a:hover svg circle,
-.index nav ul .logo a:focus svg circle{
+nav.navigation ul .logo a:hover svg circle,
+nav.navigation ul .logo a:focus svg circle{
     transform: translateX(0);
 }
 
 
-.index nav ul .logo svg {
+nav.navigation ul .logo svg {
     height: 2rem;
 }
 
+
+
+/***********************************
+Index page
+***********************************/
 
 /*header*/
 .index header {
