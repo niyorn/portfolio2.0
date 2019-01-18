@@ -632,18 +632,16 @@ About
     }
 }
 
+.about-page .about-container .contact a:hover,
+.about-page .about-container .contact a:focus{
+    color: var(--color-text-dark);
+}
+
 
 .about-page .about-container .contact li a{
     padding: 0.7rem;
     color: var(--color-three);
 }
-
-.about-page .about-container .contact li a:hover,
-.about-page .about-container .contact li a:focus{
-    color: var(--color-text-dark);
-}
-
-
 
 
 /*************************
