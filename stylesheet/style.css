@@ -599,6 +599,21 @@ About
     }
 }
 
+.about-page .about-container > section {
+    opacity: 0;
+    animation: fade-in 1s forwards, slide-in .4s ease-in;
+}
+.about-page .about-container > section:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+.about-page .about-container > section:nth-of-type(3) {
+    animation-delay: 0.3s;
+}
+.about-page .about-container > section:nth-of-type(4) {
+    animation-delay: 0.35s;
+}
+
+
 .about-page .about-container .contact .styling{
     padding: 1.4rem;
     background-color: var(--color-two);
@@ -668,6 +683,7 @@ About
 }
 
 
+
 /*************************
 Animation
 **************************/
@@ -685,9 +701,20 @@ Animation
 @keyframes fade-in {
     0% {
         opacity: 0;
+        
     }
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(4rem);
+    }
+
+    100% {
+        transform: translateY(0);
     }
 }
