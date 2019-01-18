@@ -435,11 +435,15 @@ footer
 
 .index footer p {
     padding: 1.7rem;
-    border: solid 0.2rem rgba(5, 50, 160, 0.36);
     border-radius: 0.2rem;
     font-size: 1.2rem;
     text-align: center;
-    background-color: var(--color-one);
+    background-color: var(--color-two);
+}
+@media screen and (min-width:90em) {
+    .index footer p {
+        font-size: 1.2vw;
+    }
 }
 
 .index footer p a {
