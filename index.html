@@ -8,6 +8,8 @@
     <title>Chana Portfolio</title>
     <meta name="description" content="Hi, My name is Chanakarn and I like to build Front-end application. This site will showcase some of my latest work.">
     <meta name="keywords" content="Portfolio, Front-end, Front end, Developer, Chanakarn, Chana, Niyornram, Web">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0f1627">
     <style>
         @font-face {
             font-family: "Ubuntu";
@@ -380,6 +382,20 @@ Index page
         <p>Learn more <a href="#">about me</a> or contact me at <a href="mailto:oc.niyornram@gmail.com">oc.niyornram@gmail.com</a></p>
     </footer>
 
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('sw.js')
+                    .then(function (registration) {
+                        console.log(`[service worker] succesfully registered`, registration)
+                    })
+                    .catch(function (err) {
+                        console.log(`[service worker] failed installing`, err)
+                    })
+            })
+        }
+    </script>
 </body>
 
 </html>
