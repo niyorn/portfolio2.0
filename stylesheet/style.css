@@ -95,6 +95,11 @@ nav.navigation ul li a {
     display: flex;
     align-items: center;
 }
+@media screen and (min-width: 90em) {
+    nav.navigation ul li a {
+        font-size: 1.4vw;
+    }
+}
 
 .logo svg circle {
     transform: translate(-50px);
@@ -118,6 +123,11 @@ nav.navigation ul .logo a:focus svg circle{
 
 nav.navigation ul .logo svg {
     height: 2rem;
+}
+@media screen and (min-width: 90em) {
+    nav.navigation ul .logo svg {
+        height: 2vw;
+    }
 }
 
 
@@ -565,7 +575,7 @@ About
     }
 }
 
-.about-page .about-container .contact{
+.about-page .about-container .contact .styling{
     padding: 1.4rem;
     background-color: var(--color-two);
     border-radius: 0.2rem;
@@ -583,14 +593,17 @@ About
 
 .about-page .about-container .contact li a{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgba(0, 0, 0, 0.28); */
+    border: solid 0.1rem var(--color-three);
 }
 
 .about-page .about-container .about-extra {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(17rem,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
     grid-gap: 4rem;
 }
 
@@ -601,19 +614,34 @@ About
 .about-page .about-container .contact address {
     display: flex;
     flex-direction: column;
+    font-style: normal;
 }
 
 .about-page .about-container .contact a,
 .about-page .about-container .contact address a{
-    font-style: normal;
     margin-bottom: 1rem;
     display: inline-flex;
     text-decoration: none;
     font-size: 1.2rem;
+    color: var(--color-three);
+}
+@media screen and (min-width: 90em) {
+    .about-page .about-container .contact a,
+    .about-page .about-container .contact address a{
+    font-size: 1.2vw;
+    }
 }
 
 
+.about-page .about-container .contact li a{
+    padding: 0.7rem;
+    color: var(--color-three);
+}
 
+.about-page .about-container .contact li a:hover,
+.about-page .about-container .contact li a:focus{
+    color: var(--color-text-dark);
+}
 
 
 
