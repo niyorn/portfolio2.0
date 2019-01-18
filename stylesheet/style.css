@@ -355,31 +355,40 @@ Index page
     }
 }
 
-.project-container .my-role-container {
+/* .project-container .my-role-container {
     display: none;
-}
+} */
 @media screen and (min-width:60em) {
     .project-container .my-role-container {
         display: flex;
-        position: absolute;
         flex-direction: column;
-        right: -7rem;
-        background-color: rgba(0, 0, 0, 0.78);
         color: var(--color-text-light);
-        padding: 1.7rem;
-        font-size: 1.4rem;
-        border-top: solid 0.37rem var(--color-two);
-    }
-
-    .project-container .my-role-container .my-role-title {
-        margin-bottom: 1rem;
     }
 }
 @media screen and (min-width:80em) {
     .project-container .my-role-container {
-        flex-direction: column;
-        right: -3em;
+        font-size: 1.2vw;
     }
+}
+
+.project-container .my-role-container .my-role-title {
+    position: absolute;
+    visibility: hidden;
+}
+
+.project-container .my-role-container .tags {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+
+.project-container .my-role-container .tags .tag{
+    padding: 0.4rem;
+    margin: 1.4rem 1rem 1rem 0;
+    background-color: white;
+    color: var(--color-text-dark);
+    border-radius: 0.2rem;
 }
 
 
