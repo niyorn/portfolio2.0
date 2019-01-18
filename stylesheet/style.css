@@ -386,7 +386,7 @@ Index page
 .project-container .my-role-container .tags .tag{
     padding: 0.4rem;
     margin: 1.4rem 1rem 1rem 0;
-    background-color: white;
+    background-color: var(--color-text-light);
     color: var(--color-text-dark);
     border-radius: 0.2rem;
 }
@@ -410,6 +410,11 @@ Index page
     color: var(--color-three);
     text-decoration: none;
     text-align: center;
+}
+@media screen and (min-width:90em) {
+    .project-container .project-links a {
+        font-size: 1vw;
+    }
 }
 
 .project-container .project-links a:hover,
