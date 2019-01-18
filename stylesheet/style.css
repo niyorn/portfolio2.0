@@ -471,20 +471,6 @@ About
     position: relative;
 }
 
-/* .about-page:after {
-    content: "";
-    z-index: -1;
-    width: 70vw;
-    height: 70vh;
-    background-color: var(--color-two);
-    position: absolute;
-    justify-self: center;
-    align-self: center;
-    animation: decoration-slide-in 0.7s ease-out;
-    border-radius: 0.2rem;
-    top: 4rem;
-} */
-
 .about-page main{
     margin-top: 5rem;
     padding: 1.4rem;
