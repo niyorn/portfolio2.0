@@ -276,7 +276,7 @@ Index page
 }
 
 .project-styling-container .descriptor {
-    filter: drop-shadow(2px 2px 4px black);
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.47));
     width: 100%;
 }
 @media screen and (min-width: 32em) {
@@ -385,12 +385,13 @@ Index page
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    margin-bottom: 1.4rem;
 }
 
 
 .project-container .my-role-container .tags .tag{
     padding: 0.4rem;
-    margin: 1.4rem 1rem 1rem 0;
+    margin: 1.4rem 1rem 0 0;
     background-color: var(--color-text-light);
     color: var(--color-text-dark);
     border-radius: 0.2rem;
