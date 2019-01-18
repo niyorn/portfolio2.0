@@ -327,11 +327,12 @@ Index page
 }
 
 .project-container .assets-container {
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 @media screen and (min-width: 42em) {
     .project-container .assets-container {
+        display: flex;
+        justify-content: center;
         height: 42vw;
     }
 }
@@ -342,16 +343,20 @@ Index page
 }
 
 .project-container .assets-container * {
-    width: 95%;
-    height: 100%;
+    width: 100%;
     object-fit: contain;
     background-color: transparent;
     object-position: bottom;
     border-radius: 0.2rem;
 }
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 42em) {
     .project-container .assets-container * {
         width: 90%;
+    }
+}
+@media screen and (min-width: 60em) {
+    .project-container .assets-container * {
+        width: 100%;
     }
 }
 
