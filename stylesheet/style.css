@@ -542,6 +542,7 @@ About
 .about-page .about-container .about p
  {
     font-size: 1.3em;
+    margin-bottom: 1rem;
 }
 @media screen and (min-width:42em) {
     .about-page .about-container .about h2,
@@ -554,7 +555,7 @@ About
     .about-page .about-container .about h2,
     .about-page .about-container .about p
     {
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
 }
 
