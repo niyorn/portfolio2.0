@@ -5,7 +5,7 @@
     "description": "This portfolio site show's the latest project of Chanakarn Niyornram",
     "display": "standalone",
     "orientation": "portrait",
-    "start_url": "index.html",
+    "start_url": "/index.html",
     "background_color": "#0f1627",
     "theme_color": "#0f1627",
     "icons": [
