@@ -20,8 +20,6 @@ self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME)
         .then(function (cache) {
-            console.log(`[service worker] Caching files ${cacheURL}`)
-
             return cache.addAll(cacheURL)
         })
     )
@@ -36,7 +34,6 @@ self.addEventListener('activate', function (event) {
             return Promise.all(
                 cacheNames.map(function (cacheName) {
                     if (cacheName !== CACHE_NAME) {
-                        console.log(`remove cache from: ${cacheName}`)
                         return caches.delete(cacheName)
                     }
                 })
@@ -46,7 +43,6 @@ self.addEventListener('activate', function (event) {
 })
 
 self.addEventListener('fetch', function (event) {
-    console.log('The service worker is serving the asset.');
     event.respondWith(fromCache(event.request));
     event.waitUntil(update(event.request));
 
