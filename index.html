@@ -383,20 +383,6 @@ Index page
         <p>Learn more <a href="/views/about.html">about me</a> or contact me at <a href="mailto:oc.niyornram@gmail.com">oc.niyornram@gmail.com</a></p>
     </footer>
 
-
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('sw.js')
-                    .then(function (registration) {
-                        console.log(`[service worker] succesfully registered`, registration)
-                    })
-                    .catch(function (err) {
-                        console.log(`[service worker] failed installing`, err)
-                    })
-            })
-        }
-    </script>
 </body>
 
 </html>
