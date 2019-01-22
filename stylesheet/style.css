@@ -539,24 +539,41 @@ About
 }
 
 .about-page .about-container .about h2,
-.about-page .about-container .about p
+.about-page .about-container .about p,
+.about-page .about-container .about a
  {
     font-size: 1.3em;
     margin-bottom: 1rem;
 }
 @media screen and (min-width:42em) {
     .about-page .about-container .about h2,
-    .about-page .about-container .about p
+    .about-page .about-container .about p,
+    .about-page .about-container .about a
     {
         font-size: 3vw;
     }
 }
 @media screen and (min-width:70em) {
     .about-page .about-container .about h2,
-    .about-page .about-container .about p
+    .about-page .about-container .about p,
+    .about-page .about-container .about a
     {
         font-size: 1.7vw;
     }
+}
+
+.about-page .about-container .about a {
+    padding: 1rem;
+    border: solid 0.2rem var(--color-three);
+    margin-top: 1rem;
+    display: inline-flex;
+    color: var(--color-three);
+    text-decoration: none;
+}
+.about-page .about-container .about a:hover,
+.about-page .about-container .about a:focus
+ {
+    color: var(--color-text-dark);
 }
 
 .about-page .about-container h3,
