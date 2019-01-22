@@ -169,7 +169,7 @@ Index page
     opacity: 0;
     animation: fade-in 1.2s forwards ease-in-out,
                slide-in 0.7s forwards ease-in-out;
-    animation-delay: 0.3s;
+    animation-delay: 0.15s;
 }
 .index header p {
     animation-delay: 0.4s;
