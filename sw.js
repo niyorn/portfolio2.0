@@ -43,24 +43,29 @@ self.addEventListener('activate', function (event) {
 })
 
 self.addEventListener('fetch', function (event) {
-    event.respondWith(fromCache(event.request));
-    event.waitUntil(update(event.request));
+
+    const request = event.request;
+
+    // event.respondWith(fromCache(event.request));
+
+
+    if(request.method = "GET"){
+
+        event.respondWith(
+            fetch(request).catch(function(err) {
+                console.log(`failed`, err)
+                fromCache(event.request)
+            })
+        )
+
+    }
 
 })
 
 function fromCache(request) {
-
     return caches.open(CACHE_NAME).then(function (cache) {
         return cache.match(request).then(function (matching) {
             return matching || Promise.reject('no-match');
-        });
-    });
-}
-
-function update(request) {
-    return caches.open(CACHE_NAME).then(function (cache) {
-        return fetch(request).then(function (response) {
-            return cache.put(request, response);
         });
     });
 }
