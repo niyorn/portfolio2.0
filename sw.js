@@ -48,13 +48,12 @@ self.addEventListener('fetch', function (event) {
 
     // event.respondWith(fromCache(event.request));
 
-
+    
     if(request.method = "GET"){
-
         event.respondWith(
             fetch(request).catch(function(err) {
                 console.log(`failed`, err)
-                fromCache(event.request)
+                fromCache(request)
             })
         )
 
