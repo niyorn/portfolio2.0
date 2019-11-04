@@ -258,7 +258,8 @@ Index page
 
 .project-container {
     min-height: 22rem;;
-    margin-top: 7rem;
+    margin-top: 14rem;
+    margin-bottom: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -285,6 +286,7 @@ Index page
 .project-styling-container .descriptor {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.47));
     width: 100%;
+    z-index: 2;
 }
 @media screen and (min-width: 32em) {
     .project-styling-container .descriptor {
