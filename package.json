@@ -1,0 +1,26 @@
+{
+  "name": "portfolio2.0",
+  "version": "1.0.0",
+  "description": "This portolio serve as a place to showcase the work of Chanakarn Niyornram.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niyorn/portfolio2.0.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Chanakarn",
+    "Niyornram",
+    "Front-end",
+    "Developer",
+    "Showcase"
+  ],
+  "author": "Chanakarn Niyornram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niyorn/portfolio2.0/issues"
+  },
+  "homepage": "https://github.com/niyorn/portfolio2.0#readme"
+}
