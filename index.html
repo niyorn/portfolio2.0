@@ -258,9 +258,9 @@ Index page
         <div class="welcome-text-container">
             <p>my name is <span class="name">Chanakarn</span> and I like to build fun things for the web.</p>
             <p>Explore the site to see some of my work.</p>
-            <a class="explore-link" href="#projects">Explore</a>
+            <a class="explore-link" href="#projects">Explore work</a>
         </div>
-        <div class="decoration"></div>
+        <div class="decoration rellax" data-rellax-speed="-10"></div>
     </header>
 
     <main id="projects">
@@ -268,7 +268,7 @@ Index page
             <h1>Projects</h1>
             <section class="project-container project-one">
                 <div class="project-styling-container">
-                    <div class="descriptor rellax">
+                    <div class="descriptor">
                         <h1 class="project-title">Amsterdam Metro</h1>
                         <p class="project-description">Show the changes of the tram and metro lines of Amsterdam.</p>
                         <section class="my-role-container">
@@ -281,13 +281,13 @@ Index page
                             </ul>
                         </section>
                     </div>
-                    <div class="assets-container rellax">
+                    <div class="assets-container">
                         <video autoplay loop muted playsinline title="A demo of the Amsterdam Metro application">
                             <source src="./assets/projects/amsterdam-metro/demo.webm" type="video/webm">
                             <source src="./assets/projects/amsterdam-metro/demo.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <ul class="project-links rellax">
+                    <ul class="project-links">
                         <li><a href="https://niyorn.github.io/Amsterdam_Metro/" target="_blank" rel="noopener">View site</a></li>
                         <li><a href="https://github.com/niyorn/Amsterdam_Metro" target="_blank" rel="noopener">See code</a></li>
                     </ul>
@@ -296,7 +296,7 @@ Index page
 
             <section class="project-container project-one">
                 <div class="project-styling-container">
-                    <div class="descriptor rellax" data-rellax-speed="1">
+                    <div class="descriptor">
                         <h1 class="project-title">Crypto Watcher</h1>
                         <p class="project-description">Keep track of the price of cryptocurrencies.</p>
                         <section class="my-role-container">
@@ -309,14 +309,14 @@ Index page
                             </ul>
                         </section>
                     </div>
-                    <div class="assets-container rellax" data-rellax-speed="0">
+                    <div class="assets-container">
                         <video autoplay loop muted playsinline title="A demo of the Crypto watcher application">
                             <source src="./assets/projects/cryptowatcher/demo.webm" type="video/webm">
                             <source src="./assets/projects/cryptowatcher/demo.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <ul class="project-links rellax" data-rellax-speed="0.5">
-                        <li><a href="https://niyorn.github.io/wafs/app/index.html" target="_blank" rel="noopener">View site</a></li>
+                    <ul class="project-links">
+                        <li><a href="https://crypto-watcher.netlify.app/" target="_blank" rel="noopener">View site</a></li>
                         <li><a href="https://github.com/niyorn/wafs" target="_blank" rel="noopener">See code</a></li>
                     </ul>
                 </div>
@@ -324,7 +324,7 @@ Index page
 
             <section class="project-container project-one">
                 <div class="project-styling-container">
-                    <div class="descriptor rellax" data-rellax-speed="1">
+                    <div class="descriptor">
                         <h1 class="project-title">Shopping Listo</h1>
                         <p class="project-description">Create your own shopping list.</p>
                         <section class="my-role-container">
@@ -336,13 +336,13 @@ Index page
                             </ul>
                         </section>
                     </div>
-                    <div class="assets-container rellax" data-rellax-speed="0">
+                    <div class="assets-container">
                         <video autoplay loop muted playsinline title="A demo of shoppig list application">
                             <source src="./assets/projects/shopping-list/demo.webm" type="video/webm">
                             <source src="./assets/projects/shopping-list/demo.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <ul class="project-links rellax" data-rellax-speed="0.5">
+                    <ul class="project-links">
                         <li><a href="https://afternoon-sea-42145.herokuapp.com/" target="_blank" rel="noopener">View site</a></li>
                         <li><a href="https://github.com/niyorn/browser-technologies/tree/master/shopping-list" target="_blank" rel="noopener">See code</a></li>
                     </ul>
@@ -351,7 +351,7 @@ Index page
 
             <section class="project-container project-one">
                 <div class="project-styling-container">
-                    <div class="descriptor rellax">
+                    <div class="descriptor">
                         <h1 class="project-title">Crypto Wallet</h1>
                         <p class="project-description">A proof of concept for how a Crypto Wallet may look like.</p>
                         <section class="my-role-container">
@@ -363,13 +363,13 @@ Index page
                             </ul>
                         </section>
                     </div>
-                    <div class="assets-container rellax">
+                    <div class="assets-container">
                         <video autoplay loop muted playsinline title="A demo of the Crypto wallet application">
                             <source src="./assets/projects/crypto-wallet/demo.webm" type="video/webm">
                             <source src="./assets/projects/crypto-wallet/demo.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <ul class="project-links rellax"> 
+                    <ul class="project-links"> 
                         <li><a href="https://niyorn.github.io/web-design/opdracht2/index.html" target="_blank" rel="noopener">View site</a></li>
                         <li><a href="https://github.com/niyorn/web-design/tree/master/opdracht2" target="_blank" rel="noopener">See code</a></li>
                     </ul>
@@ -399,9 +399,7 @@ Index page
     <script src="./node_modules/rellax/rellax.js"></script>
     <script>
         // Accepts any class name
-        var rellax = new Rellax('.rellax', {
-            wrapper:'.project-container'
-        });
+        var rellax = new Rellax('.rellax');
         
         console.log(rellax)
     </script>
